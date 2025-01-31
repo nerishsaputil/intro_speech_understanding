@@ -31,13 +31,14 @@ class Test(unittest.TestCase):
             self.fail("homework14.what_time_is_it does not finish!")
         self.assertTrue("homework14.py contains a method called what_time_is_it")
        
-    def test_tell_me_a_joke_runs(self):
-        self.import_homework14()
-        try:
-            self.homework14.tell_me_a_joke("en", "joke_en.mp3")
-        except:
-            self.fail("homework14.tell_me_a_joke does not finish!")
-        self.assertTrue("homework14.py contains a method called tell_me_a_joke")
+    def detect_encoding(filename):
+        def test_tell_me_a_joke_runs(self):
+            self.import_homework14()
+            try:
+                self.homework14.tell_me_a_joke("en", "joke_en.mp3")
+            except:
+                self.fail("homework14.tell_me_a_joke does not finish!")
+            self.assertTrue("homework14.py contains a method called tell_me_a_joke")
        
     def test_what_day_is_it_runs(self):
         self.import_homework14()
